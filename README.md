@@ -1,7 +1,7 @@
 
 # Pivot Studio — Company Website
 
-A clean, responsive multi-page company marketing website built with **React (Create React App)** and **Tailwind CSS**.
+A clean, responsive multi-page company marketing website built with **React** and **Tailwind CSS**.
 
 ---
 
