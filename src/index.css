@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Syne", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+
+  --color-ink: #0a0a0f;
+  --color-paper: #f5f3ee;
+  --color-cream: #ede9e0;
+  --color-accent: #c8451a;
+  --color-accent2: #2a5f8f;
+  --color-mid: #6b6760;
+  --color-border: rgba(10, 10, 15, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #f5f3ee;
+  color: #0a0a0f;
+  overflow-x: hidden;
+}
+
+/* Marquee animation — can't do this in Tailwind alone */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee 22s linear infinite;
+}
+
+/* Service card dark hover — group-hover on children */
+.service-card:hover {
+  background-color: #0a0a0f;
+}
+.service-card:hover .service-num {
+  color: rgba(245, 243, 238, 0.08);
+}
+.service-card:hover .service-icon,
+.service-card:hover .service-name,
+.service-card:hover .service-desc {
+  color: #f5f3ee;
+}
